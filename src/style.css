@@ -1,0 +1,75 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Poppins';
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    height: 100%;
+    width: 100%;
+}
+
+#buttons{
+    position: absolute;
+    margin: 10px auto;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    background: rgba(99, 20, 220, 0.25);
+}
+
+button{
+    padding: 0.2em;
+    background: rgba(99, 99, 99, 0.75);
+    color: bisque;
+}
+
+#github{
+    position: absolute;
+    margin: 10px auto;
+    padding: 0.8rem;
+    border-radius: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 25, 12, 0.5);
+}
+
+#github a {
+    color: antiquewhite;
+    background: rgb(90, 90, 90);
+    padding: 0.2rem;
+    border-radius: 0.2em;
+}
+
+#github p{
+    color: beige;
+}
+
+@media (max-width:554px ) {
+    #github{
+        position: relative;
+    }
+    #buttons{
+        width: 100%;
+    }
+}
