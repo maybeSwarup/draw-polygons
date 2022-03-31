@@ -14,9 +14,6 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
-// Objects
-const geometry = new THREE.TorusGeometry(.7, .2, 16, 100);
-
 // Lights
 const pointLight = new THREE.PointLight(0xffffff, 0.1)
 pointLight.position.x = 2
