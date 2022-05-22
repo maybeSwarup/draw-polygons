@@ -1,12 +1,6 @@
 import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import * as dat from 'dat.gui'
-import { MeshLine, MeshLineMaterial, MeshLineRaycast } from 'three.meshline';
-import { Group } from 'three';
-
-// Debug
-// const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -221,6 +215,7 @@ function clickReset(e) {
     // console.log('clickReset', scene)
     while (scene.children.length > 4) {
         scene.children.pop()
+        polygonVertices = []
     }
 }
 
@@ -237,3 +232,5 @@ canvas.addEventListener('click', handleClick)
 canvas.addEventListener('mousemove', handleMousemove)
 
 animate()
+
+document.getElementById("loader").style.display = "none";
